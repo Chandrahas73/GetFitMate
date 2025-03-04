@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Suggestions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(nutrition3.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #b7e4c7;
+        }
+        .content {
+            padding: 4rem 2rem;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+        .welcome-section h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #b7e4c7;
+        }
+        .welcome-section p {
+            font-size: 1.5rem;
+            color: #ddd;
+        }
+        .nutrition-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .nutrition-category {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #fff;
+            padding: 1.5rem;
+        }
+        .nutrition-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .nutrition-category h4 {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: #b7e4c7;
+        }
+        .nutrition-category p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+        .source {
+            font-size: 1rem;
+            color: #ccc;
+            margin-top: 2rem;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <h1>GetFitMate</h1>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Workouts</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section class="welcome-section">
+            <h2>Nutrition Suggestions</h2>
+            <p>Discover personalized meal plans and tips for a healthier lifestyle.</p>
+        </section>
+        <div class="nutrition-section">
+            <div class="nutrition-category">
+                <h4>Muscle Gain Nutrition</h4>
+                <p>Consume 15-17 calories per pound for lean muscle growth. Eat 1.6-2.2g/kg protein from chicken, fish, eggs, and dairy. Include carbs like rice and oats for energy, and healthy fats from nuts and avocado. Pre-workout: protein + carbs. Post-workout: fast-digesting protein + carbs.</p>
+            </div>
+            <div class="nutrition-category">
+                <h4>Fat Loss Nutrition</h4>
+                <p>Maintain 12-14 calories per pound for fat loss. High protein (2-2.5g/kg) preserves muscle. Prioritize fiber-rich carbs and healthy fats while avoiding processed foods. Stay hydrated for better metabolism.</p>
+            </div>
+            <div class="nutrition-category">
+                <h4>General Wellness</h4>
+                <p>For overall fitness, consume 14-16 calories per pound. Maintain a balanced diet: 40% carbs, 30% protein, 30% fats. Drink 3-4L water daily and get enough vitamins and minerals for optimal performance.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
